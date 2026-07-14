@@ -152,6 +152,29 @@ document.querySelectorAll('.skill-fill').forEach(f => skillObserver.observe(f));
 // ===== SCROLL TO TOP =====
 scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
+// ===== CONTACT FORM RESET AFTER SUBMISSION =====
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  const resetContactForm = () => {
+    contactForm.reset();
+    contactForm.querySelectorAll('input, textarea').forEach(field => {
+      if (field.type !== 'hidden') field.value = '';
+    });
+  };
+
+  contactForm.addEventListener('submit', () => {
+    sessionStorage.setItem('portfolio-form-submitted', '1');
+    setTimeout(resetContactForm, 150);
+  });
+
+  window.addEventListener('pageshow', () => {
+    if (sessionStorage.getItem('portfolio-form-submitted') === '1') {
+      resetContactForm();
+      sessionStorage.removeItem('portfolio-form-submitted');
+    }
+  });
+}
+
 // ===== SMOOTH SCROLL WITH NAV OFFSET =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
