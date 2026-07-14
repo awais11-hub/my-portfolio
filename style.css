@@ -27,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -35,9 +36,12 @@ body {
   color: var(--text);
   line-height: 1.65;
   overflow-x: hidden;
+  width: 100%;
 }
 
-img {
+img,
+canvas,
+video {
   max-width: 100%;
   display: block;
 }
@@ -626,7 +630,7 @@ a {
 /* ===== PORTFOLIO ===== */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
@@ -648,9 +652,11 @@ a {
   height: 200px;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
-.portfolio-overlay {
+/* .portfolio-overlay {
   position: absolute;
   inset: 0;
   background: rgba(109, 40, 217, 0.3);
@@ -660,7 +666,7 @@ a {
   padding: 16px;
   opacity: 0;
   transition: var(--transition);
-}
+} */
 
 .portfolio-card:hover .portfolio-overlay {
   opacity: 1;
@@ -889,6 +895,8 @@ a {
   border-radius: var(--radius);
   padding: 40px;
   box-shadow: var(--shadow);
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .form-row {
@@ -912,6 +920,7 @@ a {
 
 .form-group input,
 .form-group textarea {
+  width: 100%;
   padding: 13px 16px;
   border: 1.5px solid var(--border);
   border-radius: 10px;
@@ -921,6 +930,7 @@ a {
   background: var(--bg);
   transition: border-color var(--transition), box-shadow var(--transition);
   outline: none;
+  min-width: 0;
 }
 
 .form-group input:focus,
@@ -1030,7 +1040,7 @@ a {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 280px;
+    width: min(84vw, 280px);
     height: 100vh;
     background: var(--card);
     flex-direction: column;
@@ -1084,7 +1094,28 @@ a {
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding: 110px 0 60px;
+  }
+
+  .section {
+    padding: 90px 0;
+  }
+
   .stats-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-form-wrap {
+    padding: 24px;
+  }
+
+  .scroll-top {
+    right: 16px;
+    bottom: 20px;
   }
 }
