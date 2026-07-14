@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M Awais Majid — WordPress Developer</title>
+  <meta name="description"
+    content="WordPress Developer from Bahawalpur, Pakistan. Expert in Elementor, WooCommerce & ARMember." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">A<span>M</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+    <div class="hero-floats">
+      <span class="float-tag ft1">HTML</span>
+      <span class="float-tag ft2">CSS</span>
+      <span class="float-tag ft3">JS</span>
+      <span class="float-tag ft4">&lt;?php</span>
+      <span class="float-tag ft5">Elementor</span>
+
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-code"></i>
+        <span>WordPress Developer — Bahawalpur, Pakistan</span>
+      </div>
+      <h1 class="hero-title">M Awais <span class="gradient-text">Majid</span></h1>
+      <p class="hero-tagline"><span id="typing-text"></span><span class="cursor"></span></p>
+      <p class="hero-desc">Expert in WordPress, WooCommerce, Elementor &amp; ARMember — building clean, fast and
+        scalable websites that deliver real results.</p>
+      <div class="hero-btns">
+        <a href="#portfolio" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+        <i class="fas fa-globe"></i>
+        <div class="stat-number"><span class="counter" data-target="25">0</span>+</div>
+        <div class="stat-label">WordPress Sites Launched</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-star"></i>
+        <div class="stat-number"><span class="" data-target="1">1</span>+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-users"></i>
+        <div class="stat-number"><span class="counter" data-target="20">0</span>+</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-briefcase"></i>
+        <div class="stat-number"><span class="counter" data-target="30">0</span>+</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>What I Build</h2>
+        <p>From concept to launch — complete WordPress solutions tailored to your business.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon"><i class="fab fa-wordpress"></i></div>
+          <h3>WordPress Development</h3>
+          <p>Custom themes, plugin development, and full WordPress setups built for performance and security.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+          <h3>WooCommerce Stores</h3>
+          <p>Full-featured online stores with payment gateways, inventory management, and custom product pages.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Elementor Design</h3>
+          <p>Pixel-perfect, responsive page designs using Elementor Pro — beautiful on every screen size.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon"><i class="fas fa-users-cog"></i></div>
+          <h3>Membership Sites</h3>
+          <p>ARMember-powered membership platforms with user roles, gated content, and subscription billing.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <h3>Speed Optimization</h3>
+          <p>WordPress performance tuning — faster load times, better Core Web Vitals, and higher Google rankings.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon"><i class="fas fa-wrench"></i></div>
+          <h3>Maintenance &amp; Support</h3>
+          <p>Ongoing updates, security monitoring, backups, and troubleshooting to keep your site running smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>My Skills</h2>
+        <p>The tools and technologies I use to build professional WordPress websites.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-col" data-aos="fade-right">
+          <h3>WordPress Platforms</h3>
+          <div class="skill-item">
+            <div class="skill-info"><i class="fab fa-wordpress"></i><span>WordPress</span><span
+                class="skill-pct">95%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><i class="fas fa-layer-group"></i><span>Elementor</span><span
+                class="skill-pct">95%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><i class="fas fa-shopping-bag"></i><span>WooCommerce</span><span
+                class="skill-pct">87%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="87"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><i class="fas fa-user-shield"></i><span>ARMember</span><span
+                class="skill-pct">85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-col" data-aos="fade-left">
+          <h3>Languages &amp; Technologies</h3>
+          <div class="skill-item">
+            <div class="skill-info"><i class="fab fa-php"></i><span>PHP</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><i class="fab fa-js-square"></i><span>JavaScript</span><span
+                class="skill-pct">80%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><i class="fab fa-html5"></i><span>HTML5</span><span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><i class="fab fa-css3-alt"></i><span>CSS3</span><span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>My Work</h2>
+        <p>Real projects — real results. Here's a selection of websites I've built.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#667eea,#764ba2);">
+            <div class="portfolio-overlay"><span class="portfolio-tag">WooCommerce</span></div>
+          </div>
+          <div class="portfolio-info">
+            <h3>FashionHub Online Store</h3>
+            <p>Full WooCommerce clothing store with custom product filters, payment gateway, and mobile-first design.
+            </p>
+            <div class="portfolio-tags">
+              <span>WordPress</span><span>WooCommerce</span><span>Elementor</span><span>PHP</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#f093fb,#f5576c);">
+            <div class="portfolio-overlay"><span class="portfolio-tag">Membership</span></div>
+          </div>
+          <div class="portfolio-info">
+            <h3>ProLearn Academy</h3>
+            <p>Online course platform with ARMember, drip content, progress tracking, and subscription billing.</p>
+            <div class="portfolio-tags">
+              <span>WordPress</span><span>ARMember</span><span>Elementor</span><span>MySQL</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#4facfe,#00f2fe);">
+            <div class="portfolio-overlay"><span class="portfolio-tag">Corporate</span></div>
+          </div>
+          <div class="portfolio-info">
+            <h3>TechSolutions Corporate Site</h3>
+            <p>Corporate website with custom forms, service pages, blog, and full SEO optimization.</p>
+            <div class="portfolio-tags">
+              <span>WordPress</span><span>Elementor</span><span>HTML/CSS</span><span>jQuery</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#43e97b,#38f9d7);">
+            <div class="portfolio-overlay"><span class="portfolio-tag">eCommerce</span></div>
+          </div>
+          <div class="portfolio-info">
+            <h3>OrganicFoods Market</h3>
+            <p>Multi-vendor WooCommerce marketplace with delivery zones and vendor dashboards.</p>
+            <div class="portfolio-tags"><span>WooCommerce</span><span>PHP</span><span>JavaScript</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#fa709a,#fee140);">
+            <div class="portfolio-overlay"><span class="portfolio-tag">Real Estate</span></div>
+          </div>
+          <div class="portfolio-info">
+            <h3>DreamHomes Real Estate</h3>
+            <p>Property listing site with search filters, agent profiles, and virtual tour integrations.</p>
+            <div class="portfolio-tags"><span>WordPress</span><span>Elementor</span><span>PHP</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="portfolio-img" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb);">
+            <div class="portfolio-overlay"><span class="portfolio-tag">Restaurant</span></div>
+          </div>
+          <div class="portfolio-info">
+            <h3>GrillMaster Restaurant</h3>
+            <p>Restaurant site with online menu, reservation system, WooCommerce food ordering, and loyalty program.</p>
+            <div class="portfolio-tags"><span>WordPress</span><span>WooCommerce</span><span>CSS3</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section section-alt" id="about">
+    <div class="container about-grid">
+      <div class="about-text" data-aos="fade-right">
+        <h2>M Awais Majid</h2>
+        <p>I'm a dedicated WordPress developer based in Bahawalpur, Pakistan. Building websites is not just my job —
+          it's my passion. In every project I take time to understand the client's needs and craft the best solution for
+          them.</p>
+        <p>From pixel-perfect designs with Elementor to powerful eCommerce stores with WooCommerce and fully functional
+          membership platforms with ARMember — I work across every layer of the stack. HTML, CSS, JavaScript, PHP,
+          jQuery and MySQL are the tools I rely on daily.</p>
+        <p>My goal is simple: build websites that don't just look great, but actually deliver results. Client
+          satisfaction is my biggest reward.</p>
+        <div class="about-pillars">
+          <div class="pillar"><i class="fas fa-terminal"></i>
+            <div>
+              <h4>Clean Code</h4>
+              <p>Maintainable &amp; documented</p>
+            </div>
+          </div>
+          <div class="pillar"><i class="fas fa-bolt"></i>
+            <div>
+              <h4>Performance</h4>
+              <p>Optimized for speed</p>
+            </div>
+          </div>
+          <div class="pillar"><i class="fas fa-expand-arrows-alt"></i>
+            <div>
+              <h4>Scalable</h4>
+              <p>Built to grow with you</p>
+            </div>
+          </div>
+          <div class="pillar"><i class="fas fa-shield-alt"></i>
+            <div>
+              <h4>Secure</h4>
+              <p>Hardened &amp; protected</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-img-wrap" data-aos="fade-left">
+        <div class="about-img-box">
+          <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&q=80&w=800"
+            alt="Developer workspace" />
+          <div class="about-code-card">
+            <span class="code-line accent">&gt; wp theme install custom --activate</span>
+            <span class="code-line">Success: Theme installed.</span>
+            <span class="code-blink">_</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Let's Work Together</h2>
+        <p>Need a WordPress website, WooCommerce store, or membership site? Send me a message and let's talk.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p><a href="mailto:awaismajid128@gmail.com">awaismajid128@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <p class="contact-label">WhatsApp / Phone</p><a href="https://wa.me/923117966062" target="_blank">+92 311
+                7966062</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p>Bahawalpur, Pakistan</p>
+            </div>
+          </div>
+          <div class="response-box">
+            <p class="response-label">Response Time</p>
+            <p class="response-text">I typically respond within 24 hours</p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <!-- Formspree: Native HTML POST — works everywhere including local file:// -->
+          <form id="contact-form" action="https://formspree.io/f/xnjwwqqp" method="POST">
+            <!-- Redirect back to portfolio after submit -->
+            <input type="hidden" name="_subject" value="New message from Portfolio — M Awais Majid" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" name="name" placeholder="Name" required />
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" name="email" placeholder="Email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" name="subject" placeholder="WordPress Website Inquiry" required />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Your Message</label>
+              <textarea id="fmessage" name="message" rows="5"
+                placeholder="Describe your project — what you need, your timeline, and any specific requirements..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="logo">A<span>M</span></a>
+      <p>&copy; 2026 M Awais Majid. All rights reserved. Bahawalpur, Pakistan.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/923117966062" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
